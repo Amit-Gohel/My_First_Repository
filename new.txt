@@ -1,11 +1,22 @@
-ewmbdkjikniusdhnciASD
+ORG 0000H
 
-as
-d
-asd
-as
-d
-s
-d
-asd
-asd
+MOV A, M 
+INX H 
+MOV B, M 
+INX H 
+MOV C, M 
+INX H 
+MOV D, M 
+
+MOV A, D 
+ADD C 
+MOV C, A 
+MOV A, B 
+ADC 0 
+ADD C 
+
+MOV E, A 
+INX H 
+MOV M, E 
+
+HLT ;
